@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Simple Gallery Photos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+    - [Frontend](#frontend-simple-gallery-photos)
+- [Getting Started](#getting-started)
+- [Acknowledgments](#acknowledgments)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+Simple Gallery Photos is a front-end web site that enables users to view their photo collections.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- View Photo Collections: Users can view list photo, view detail photo.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Technologies Used
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Frontend Simple Gallery Photos
+
+- React Js
+- Tailwind CSS
+- Shadcn UI
+- Public API Unsplash
+- Vite
+
+## Getting Started
+
+To get started with the Simple Gallery Photos project, follow the setup instructions in the respective directories:
+
+- [Frontend Setup Instructions](README.md)
+
+## Acknowledgments
+
+Special thanks to the developers and maintainers of the technologies used in this project. Their hard work and dedication make projects like this possible.
