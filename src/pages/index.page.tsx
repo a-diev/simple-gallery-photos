@@ -5,7 +5,7 @@ import Sorting from "./components/Sorting";
 import { useSortingStore } from '@/lib/zustand';
 
 export default function Page() {
-    const sorting = useSortingStore((state) => state.sorting)
+    const sorting = useSortingStore((state: any) => state.sorting)
 
     const { isLoading: isLoadingImages, data: dataImages, refetch } = GetAllImages(sorting)
     if (isLoadingImages) return <h1>Loading...</h1>
