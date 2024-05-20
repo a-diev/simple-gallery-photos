@@ -21,7 +21,7 @@ const Sorting = ({ refetch }: Readonly<IPropsSorting>) => {
             }}
             defaultValue="latest"
         >
-            <SelectTrigger className="w-[280px]">
+            <SelectTrigger className="w-full lg:w-auto h-[56px]">
                 <SelectValue placeholder="Select a timezone" />
             </SelectTrigger>
             <SelectContent>
