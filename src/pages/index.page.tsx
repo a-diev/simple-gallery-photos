@@ -22,8 +22,6 @@ export default function Page() {
         refetch: refetchSearchImage
     } = GetSearchImage(search)
 
-    if (isLoadingImages || isLoadingSearchImage) return <h1>Loading...</h1>
-
     return (
         <section>
             <section className="border-2 h-auto bg-white fixed left-0 right-0 px-4 py-3 flex flex-col gap-4 items-start justify-start">
@@ -47,6 +45,7 @@ export default function Page() {
             </section>
             <section className="px-4 pt-[200px] pb-56">
                 <section className="columns-1 gap-5 sm:columns-2 lg:columns-3 lg:gap-8 xl:columns-4 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8 ">
+                    {isLoadingImages || isLoadingSearchImage && <h1>Loading...</h1>}
                     {!search && dataImages?.map((i: TItemGallery) => (
                         <ItemDetailDrawer data={i}>
                             <ItemGallery data={i} />
